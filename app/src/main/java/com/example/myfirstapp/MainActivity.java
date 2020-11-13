@@ -26,11 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText);
                 TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
 
-                //definisci le variabili convertendo il text in integer
+                //definisci le variabili convertendo gli oggetti in integer
                 int num1 = Integer.parseInt(firstNumEditText.getText().toString());
                 int num2 = Integer.parseInt(secondNumEditText.getText().toString());
+                //calcola la somma
                 int result = num1 + num2;
-                //output
+                //output nella resultTextView
                 resultTextView.setText(result + "");
             }
         });
